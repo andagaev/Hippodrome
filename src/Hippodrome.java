@@ -1,5 +1,6 @@
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -16,7 +17,13 @@ public class Hippodrome {
         this.horses = horses;
     }
     public static void main(String[] args) throws InterruptedException {
+        ArrayList<Horse> horses = new ArrayList<>();
+        horses.add(new Horse("Horse1", 3, 0));
+        horses.add(new Horse("Horse2", 4, 0));
+        horses.add(new Horse("Horse3", 2, 0));
+        game = new Hippodrome(horses);
 
+        game.run();
     }
 
     public void run() throws InterruptedException {
